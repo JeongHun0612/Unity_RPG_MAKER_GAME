@@ -18,8 +18,9 @@ public class PlayerManager : MovingObject
     public float runSpeed;
     private float applyRunSpeed;
     private bool applyRunFlag = false;
-
     private bool canMove = true;
+
+    public bool notMove = false;
 
     private void Awake()
     {
@@ -45,7 +46,7 @@ public class PlayerManager : MovingObject
 
     IEnumerator MoveCoroutine()
     {
-        while (Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0)
+        while (Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0 && !notMove)
         {
             // 빠른 이동 키 입력시
             if (Input.GetKey(KeyCode.LeftShift))
@@ -123,7 +124,7 @@ public class PlayerManager : MovingObject
     // Update is called once per frame
     void Update()
     {
-        if (canMove)
+        if (canMove && !notMove)
         {
             if (Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0)
             {
