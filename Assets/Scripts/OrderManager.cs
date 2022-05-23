@@ -31,17 +31,6 @@ public class OrderManager : MonoBehaviour
         return tempList;
     }
 
-    // 움직임 제어
-    public void NotMove()
-    {
-        thePlayer.notMove = true;
-    }
-
-    // 움직임 제어해제
-    public void Move()
-    {
-        thePlayer.notMove = false;
-    }
 
     // 사라지게 만듬 ( SetActive = false )
     public void SetTransparent(string _name)
@@ -89,6 +78,18 @@ public class OrderManager : MonoBehaviour
                 characters[i].boxCollider.enabled = true;
             }
         }
+    }
+
+    // 움직임 제어
+    public void NotMove()
+    {
+        thePlayer.notMove = true;
+    }
+
+    // 이동 가능
+    public void Move()
+    {
+        thePlayer.notMove = false;
     }
 
     // 이동

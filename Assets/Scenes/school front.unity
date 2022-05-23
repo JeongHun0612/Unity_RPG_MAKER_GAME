@@ -202,9 +202,33 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8403566761153486438, guid: d297910dbcc29cb43ac2da6e584fb64a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -4811957965140153772, guid: d297910dbcc29cb43ac2da6e584fb64a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -4702736251480721584, guid: d297910dbcc29cb43ac2da6e584fb64a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: -4369167400080014034, guid: d297910dbcc29cb43ac2da6e584fb64a, type: 3}
       propertyPath: m_Name
       value: Test B
+      objectReference: {fileID: 0}
+    - target: {fileID: -687416351156278339, guid: d297910dbcc29cb43ac2da6e584fb64a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -109151075209446333, guid: d297910dbcc29cb43ac2da6e584fb64a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1441117854797677224, guid: d297910dbcc29cb43ac2da6e584fb64a, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2630152188916967461, guid: d297910dbcc29cb43ac2da6e584fb64a, type: 3}
       propertyPath: m_RootOrder
@@ -258,6 +282,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6946444735883255947, guid: d297910dbcc29cb43ac2da6e584fb64a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7110192480074046427, guid: d297910dbcc29cb43ac2da6e584fb64a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804465321842215318, guid: d297910dbcc29cb43ac2da6e584fb64a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: -2695619058785784247, guid: d297910dbcc29cb43ac2da6e584fb64a, type: 3}
 --- !u!1 &1587184990
@@ -303,7 +339,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -22.003174, y: -78.269165}
+  m_Offset: {x: -22.656555, y: -77.723206}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -314,7 +350,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 815.1456, y: 624.91943}
+  m_Size: {x: 814.984, y: 623.49036}
   m_EdgeRadius: 0
 --- !u!4 &1587184993
 Transform:

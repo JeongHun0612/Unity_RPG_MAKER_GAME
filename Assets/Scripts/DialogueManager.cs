@@ -39,7 +39,6 @@ public class DialogueManager : MonoBehaviour
     public string enterSound;
 
     private AudioManager theAudio;
-    private OrderManager theOrder;
 
     public bool isTalking = false;
     private bool keyActivated = false;
@@ -53,15 +52,12 @@ public class DialogueManager : MonoBehaviour
         listSprites = new List<Sprite>();
         listDialogueWindows = new List<Sprite>();
         theAudio = FindObjectOfType<AudioManager>();
-        theOrder = FindObjectOfType<OrderManager>();
     }
 
     public void ShowDialogue(Dialogue dialogue)
     {
         // 대화 시작 boolean 변수
         isTalking = true;
-
-        theOrder.NotMove();
 
         // List에 값 추가
         for (int i = 0; i < dialogue.sentences.Length; i++)
@@ -88,7 +84,6 @@ public class DialogueManager : MonoBehaviour
         animSprites.SetBool("Appear", false);
         animDialogueWindow.SetBool("Appear", false);
         isTalking = false;
-        theOrder.Move();
     }
 
     IEnumerator StartDialogueCoroutine()
